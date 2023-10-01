@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="nav__logo">Jonas</a>
+        <a href="index.html" className="nav__logo">Jonas Andersen</a>
 
         <div className={isShowing ? "nav__menu show-menu" : "nav__menu"}>
 
