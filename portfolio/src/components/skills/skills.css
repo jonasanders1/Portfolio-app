@@ -9,7 +9,6 @@
 }
 
 .skills__content{
-    
     flex: 1;
     min-width: 379px;
     background-color: var(--container-color);

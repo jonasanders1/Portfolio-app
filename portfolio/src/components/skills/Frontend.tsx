@@ -1,6 +1,6 @@
 const Frontend = () => {
     return (
-        <div className="skills__content">
+        <div className="skills__content frontend">
         <h3 className="skills__title">Frontend developer</h3>
 
         <div className="skills__box">
@@ -63,6 +63,39 @@ const Frontend = () => {
                 </div>
 
             </div>
+
+            <div className="skills__group">
+
+                <div className="skills__data">
+                    <i className='bx bxl-bootstrap'></i>
+
+                    <div>
+                        <h3 className='skills__name'>Bootstrap</h3>
+                        <span className="skills__level">Intermediate</span>
+                    </div>
+                </div>
+
+                <div className="skills__data">
+                    <i className='bx bx-git-pull-request' ></i>
+
+                    <div>
+                        <h3 className='skills__name'>Git</h3>
+                        <span className="skills__level">Intermediate</span>
+                    </div>
+                </div>
+
+                <div className="skills__data">
+                    <i className='bx bxl-react' ></i>
+
+                    <div>
+                        <h3 className='skills__name'>React</h3>
+                        <span className="skills__level">Intermediate</span>
+                    </div>
+                </div>
+
+            </div>
+            
+
         </div>
     </div>
   )

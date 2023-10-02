@@ -1,6 +1,6 @@
 const Backend = () => {
   return (
-    <div className="skills__content">
+    <div className="skills__content backend">
         <h3 className="skills__title">Backend developer</h3>
 
         <div className="skills__box">
