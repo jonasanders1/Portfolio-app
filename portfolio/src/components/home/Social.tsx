@@ -1,3 +1,4 @@
+
 const Social = () => {
   return (
     <div className="home__social">
@@ -17,5 +18,6 @@ const Social = () => {
     </div>
   )
 }
+
 
 export default Social

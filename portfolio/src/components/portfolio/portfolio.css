@@ -1,0 +1,163 @@
+.portfolio{
+
+}
+.portfolio__title{
+
+}
+.portfolio__subtitle{
+
+}
+.portfolio__container{
+
+}
+.filter__container{
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+.filter__button {
+    position: relative;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-normal);
+    background-color: var(--font-color);
+}
+.filter__button::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    width: 0%;
+    border-radius: 10px;
+    height: 3px;
+    background-color: rgb(244, 79, 79);
+}
+
+.active::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    width: 100%;
+    border-radius: 10px;
+    height: 3px;
+    background-color: rgb(244, 79, 79);
+}
+
+.filter__button:hover::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0px;
+    width: 100%;
+    border-radius: 10px;
+    height: 3px;
+    background-color: rgb(244, 79, 79);
+    transition: all 250ms;
+}
+
+
+.projects {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* ****** PROJECT CARD ****** */
+.project__card {
+    padding-top: 2rem;
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.project__header{
+   padding: 0 2rem;
+}
+.project__main{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem 1rem 2rem;
+}
+.project__main-image{
+  margin-top: .5rem;
+  border-radius: .5rem;
+}
+
+
+.image__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.image-button{
+  background-color: rgba(184, 184, 184, 0.54);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.image-button:hover{
+  background-color: rgb(143, 143, 143);
+}
+
+.project__footer{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 1.25rem 1.25rem;
+  padding: 1rem;
+}
+.project__button {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  gap: 5px;
+  padding: .3rem .5rem;
+  border-radius: .5rem;
+  border: 1px solid rgb(244, 79, 79);
+  color: rgb(244, 79, 79);
+}
+.project__button > * {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.project__button:hover {
+  color: white;
+  background-color: rgb(244, 79, 79);
+  transition: all 250ms;
+}
+
+.project__button-icon{
+  font-size: 1.35rem;
+}
+
+
+/* For medium devices */
+@media screen and (max-width: 800px) {
+  .projects{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projects{
+    grid-template-columns: repeat(1, 1fr);
+  }
+ 
+
+}
+
+/* For small devices */
+@media screen and (max-width: 420px) {
+  .filter__button{
+    font-size: .7rem;
+  }
+
+}

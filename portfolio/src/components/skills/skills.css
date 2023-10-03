@@ -7,10 +7,9 @@
     column-gap: 3rem;
     justify-content: center; */
 }
-
 .skills__content{
     flex: 1;
-    min-width: 379px;
+    min-width: 300px;
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2rem 4rem;
@@ -53,6 +52,13 @@
     font-size: var(--tiny-font-size);
 }
 
+.frontend{
+    flex: 2;
+}
+.backend {
+    flex: 1;
+}
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For medium devices */
@@ -69,10 +75,11 @@
     .skills__content{
         padding: 1.5rem;
     }
+
 }
 
 /* For small devices */
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 420px) {
     .skills__box{
         column-gap: 1.25;
     }
