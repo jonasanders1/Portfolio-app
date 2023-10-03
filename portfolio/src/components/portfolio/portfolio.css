@@ -17,6 +17,7 @@
 }
 .filter__button {
     position: relative;
+    color: var(--title-color);
     font-size: var(--h3-font-size);
     font-weight: var(--font-normal);
     background-color: var(--font-color);
@@ -93,17 +94,16 @@
   gap: 1rem;
 }
 .image-button{
-  background-color: rgba(184, 184, 184, 0.54);
-  color: white;
+  background-color: inherit;
+  font-size: 2rem;
+  color: rgba(169, 168, 168, 0.466);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 30px;
   border-radius: 50%;
 }
 .image-button:hover{
-  background-color: rgb(143, 143, 143);
+  color: rgba(87, 87, 87, 0.676);
 }
 
 .project__footer{
