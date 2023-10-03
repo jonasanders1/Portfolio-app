@@ -14,6 +14,8 @@
     margin: 0 auto;
     display: flex;
     gap: 30px;
+    margin-bottom: 2rem;
+
 }
 .filter__button {
     position: relative;
@@ -64,14 +66,22 @@
 
 /* ****** PROJECT CARD ****** */
 .project__card {
-    padding-top: 2rem;
     background-color: var(--container-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 1.25rem;
     overflow: hidden;
 }
 .project__header{
-   padding: 0 2rem;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.project__header *{
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+  
 }
 .project__main{
   display: flex;
@@ -79,24 +89,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem 1rem 2rem;
 }
 .project__main-image{
-  margin-top: .5rem;
-  border-radius: .5rem;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
-
-
+.project__description{
+  padding: 1rem;
+}
 .image__container{
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.image__button-container{
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  padding: 0 .7rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
 }
 .image-button{
   background-color: inherit;
   font-size: 2rem;
-  color: rgba(169, 168, 168, 0.466);
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;

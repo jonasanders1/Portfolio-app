@@ -41,26 +41,24 @@ const ProjectCard: React.FC<{item : ProjectItem}> = ({item}) => {
   return (
     <div className="project__card">
 
-      <div className="project__header">
-          <h3>{item.name}</h3>
+      <div className="project__main">
+        <div className="image__container">
+          <div className="project__header">
+              <h3>{item.name}</h3>
+          </div>
+          <img className="project__main-image" src={item.image.projectImage[imageIndex]}  width={150}/>
+          <div className="image__button-container">
+              <button className="image-button" onClick={handlePreviousImage}>
+                <i className='bx bxs-left-arrow'></i>
+              </button>
+              <button className="image-button" onClick={handleNextImage}>
+                <i className='bx bxs-right-arrow'></i>
+              </button>
+          </div>
+        </div>
       </div>
 
-      <div className="project__main">
-
-        <div className="image__container">
-
-          <button className="image-button" onClick={handlePreviousImage}>
-            <i className='bx bxs-left-arrow'></i>
-          </button>
-
-            <img className="project__main-image" src={item.image.projectImage[imageIndex]}  width={150}/>
-
-          <button className="image-button" onClick={handleNextImage}>
-            <i className='bx bxs-right-arrow'></i>
-          </button>
-
-        </div>
-
+      <div className="project__description">
           <p>{item.description}</p>
       </div>
 

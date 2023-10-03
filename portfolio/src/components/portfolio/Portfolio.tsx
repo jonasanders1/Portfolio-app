@@ -7,8 +7,8 @@ import ProjectCard from "./ProjectCard"
 const Portfolio = () => {
 
   
-  const [active, setActive] = useState("web")
-  const [projects, setProjects] = useState(projectsSets.web)
+  const [active, setActive] = useState("all")
+  const [projects, setProjects] = useState(projectsSets.mobile.concat(projectsSets.web))
 
 
 
