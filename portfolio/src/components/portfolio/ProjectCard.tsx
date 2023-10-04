@@ -20,7 +20,7 @@ const ProjectCard: React.FC<{item : ProjectItem}> = ({item}) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   // state for keeping track of the current image[index]
-  const[imageIndex, setImageIndex] = useState(0)
+  // const[imageIndex, setImageIndex] = useState(0)
 
   const openModal = () => {
     setIsModalOpen(true);
