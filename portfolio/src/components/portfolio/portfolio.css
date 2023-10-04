@@ -70,61 +70,90 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 1.25rem;
     overflow: hidden;
+    height: 420px;
+    position: relative;
 }
+.project__content{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.project__image{
+  width: 100%;
+  object-fit: contain;
+  height: 150px;
+  border-radius: 10px;
+}
+
+
 .project__header{
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
 }
 .project__header *{
-  color: white;
+  color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 1.5rem;
-  
 }
 .project__main{
   display: flex;
-  gap: 1rem;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .project__main-image{
-  width: 100%;
   object-fit: cover;
-  height: 100%;
 }
 .project__description{
-  padding: 1rem;
-}
-.image__container{
-  width: 100%;
-  height: 300px;
+  max-height: 100px;  
   position: relative;
 }
-.image__button-container{
+.modal{
+  z-index: 10;
   position: absolute;
-  top: 40%;
-  width: 100%;
-  padding: 0 .7rem;
-  display: flex;
-  justify-content: space-between;
+  inset: 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
 }
-.image-button{
-  background-color: inherit;
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-.image-button:hover{
-  color: rgba(87, 87, 87, 0.676);
+.active{
+  opacity: 1;
 }
 
+.modal-content{
+  padding: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: all 200ms ease-in;
+}
+.read-more__button{
+  font-size: .75rem;
+  color: rgb(58, 58, 58);
+  text-decoration: underline;
+  background-color: inherit;
+  transition: all 200ms;
+}
+
+
+
+.read-more__button:hover{
+  color: rgb(244, 79, 79);
+}
+.close-icon {
+  font-size: 1.5rem;
+}
+.close-icon:hover{
+  color: rgb(244, 79, 79);
+}
 .project__footer{
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   box-shadow: inset 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
