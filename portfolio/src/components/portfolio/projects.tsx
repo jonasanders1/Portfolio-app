@@ -12,6 +12,17 @@ import snake from "../../assets/project-images/snake/snake.png"
 
 // Spotify
 import spotify from "../../assets/project-images/spotify-app/spotify.png"
+
+// Portfolio
+import portfolio from "../../assets/project-images/portfolio/portfolio.png"
+
+
+const customColor = {
+    typescript: "#387cc8",
+    javascript: "#f0db4c",
+    swift: "#f25740"
+}
+
 export const projectsSets = {
     web: [
       {
@@ -21,26 +32,23 @@ export const projectsSets = {
           projectImage: [snake],
         },
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, temporibus!",
-        link: ""
+        link: "",
+        icon: "javascript",
+        language: "JavaScript",
+        color: customColor.javascript
       },
       {
         id: 2,
-        name: "Web 2",
+        name: "Portfolio",
         image: {
-          projectImage: [mobileImage, webImage],
+          projectImage: [portfolio],
         },
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, temporibus!",
-        link: ""
+        description: "Fully responsive personal website that showcases my projects and experience.",
+        link: "https://github.com/jonasanders1/Portfolio-app",
+        icon: "typescript",
+        language: "TypeScript",
+        color : customColor.typescript
       },
-      {
-        id: 3,
-        name: "web 3",
-        image: {
-          projectImage: [mobileImage, webImage],
-        },
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, temporibus!",
-        link: ""
-      }
     ],
     mobile: [
         {
@@ -50,7 +58,10 @@ export const projectsSets = {
             projectImage: [home, correct, incorrect, result],
           },
           description: "Quiz app where you can choose difficulty. When the you are done, the score is displayed and you can choose to play again or change the difficulty.",
-          link: "https://github.com/jonasanders1/quizz"
+          link: "https://github.com/jonasanders1/quizz",
+          icon: "typescript",
+          language: "TypeScript",
+          color: customColor.typescript
         },
         {
           id: 2,
@@ -59,16 +70,22 @@ export const projectsSets = {
             projectImage: [spotify],
           },
           description: "An app that uses AI for generating playlists. Using ChatGPT`s API to generate songs based on the prompt.",
-          link: ""
+          link: "",
+          icon: "apple",
+          language: "Swift",
+          color: customColor.swift
         },
         {
           id: 3,
-          name: "Advanced Todo list",
+          name: "Todo list",
           image: {
             projectImage: [mobileImage, webImage],
           },
-          description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, temporibus!",
-          link: ""
+          description: "Advanced todo list with user authentication, login and register using firebase!",
+          link: "",
+          icon: "apple",
+          language: "Swift",
+          color: customColor.swift
         },
       ]
   };

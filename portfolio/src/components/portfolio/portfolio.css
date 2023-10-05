@@ -81,9 +81,22 @@
   margin-top: 1rem;
   gap: 1rem;
 }
+
+.header__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.programming__language{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .project__image{
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   height: 150px;
   border-radius: 10px;
 }

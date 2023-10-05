@@ -11,8 +11,12 @@ interface ProjectItem {
   image: {
     projectImage: string[]
   };
+
   description: string;
-  link: string
+  link: string;
+  icon: string;
+  language: string
+  color: string
 }
 
 
@@ -35,7 +39,7 @@ const ProjectCard: React.FC<{item : ProjectItem}> = ({item}) => {
   return (
     <div className="project__card">
         <div className="project__content">
-          <Header name={item.name}/>
+          <Header name={item.name} icon={item.icon} language={item.language} color={item.color}/>
           <Images images={item.image}/>
           <Description description={item.description}/>
           <button onClick={openModal} className="read-more__button">Read more...</button>
