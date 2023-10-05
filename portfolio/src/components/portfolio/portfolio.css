@@ -173,6 +173,7 @@
   border-radius: 0 0 1.25rem 1.25rem;
   padding: 1rem;
 }
+
 .project__button {
   display: flex;
   align-items: center;
@@ -182,6 +183,21 @@
   border-radius: .5rem;
   border: 1px solid rgb(244, 79, 79);
   color: rgb(244, 79, 79);
+}
+
+.disabled__button{
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  gap: 5px;
+  padding: .3rem .5rem;
+  border-radius: .5rem;
+  border: 1px solid rgb(167, 167, 167);
+  color: rgb(139, 139, 139);
+
+}
+.disabled__button span{
+  text-decoration: line-through;
 }
 .project__button > * {
   text-transform: capitalize;

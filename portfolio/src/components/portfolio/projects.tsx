@@ -1,15 +1,12 @@
 import mobileImage from "../../assets/about.png"
 import webImage from "../../assets/profile.png"
-
 // Quiz
 import correct from "../../assets/project-images/quiz-app/correct.png"
 import home from "../../assets/project-images/quiz-app/home.png"
 import incorrect from "../../assets/project-images/quiz-app/incorrect.png"
 import result from "../../assets/project-images/quiz-app/result.png"
-
 // Snake
 import snake from "../../assets/project-images/snake/snake.png"
-
 // Spotify
 import spotify from "../../assets/project-images/spotify-app/spotify.png"
 
@@ -31,8 +28,9 @@ export const projectsSets = {
         image: {
           projectImage: [snake],
         },
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, temporibus!",
-        link: "",
+        description: "Fun and simple snake game made with HTML, CSS and vanilla JS. Try it yourself!",
+        githubLink: "https://github.com/jonasanders1/Snake",
+        previewLink: "https://snake-pearl.vercel.app/",
         icon: "javascript",
         language: "JavaScript",
         color: customColor.javascript
@@ -44,7 +42,8 @@ export const projectsSets = {
           projectImage: [portfolio],
         },
         description: "Fully responsive personal website that showcases my projects and experience.",
-        link: "https://github.com/jonasanders1/Portfolio-app",
+        githubLink: "https://github.com/jonasanders1/Portfolio-app",
+        previewLink: "",
         icon: "typescript",
         language: "TypeScript",
         color : customColor.typescript
@@ -58,7 +57,8 @@ export const projectsSets = {
             projectImage: [home, correct, incorrect, result],
           },
           description: "Quiz app where you can choose difficulty. When the you are done, the score is displayed and you can choose to play again or change the difficulty.",
-          link: "https://github.com/jonasanders1/quizz",
+          githubLink: "https://github.com/jonasanders1/quizz",
+          previewLink: "",
           icon: "typescript",
           language: "TypeScript",
           color: customColor.typescript
@@ -70,7 +70,8 @@ export const projectsSets = {
             projectImage: [spotify],
           },
           description: "An app that uses AI for generating playlists. Using ChatGPT`s API to generate songs based on the prompt.",
-          link: "",
+          githubLink: "",
+          previewLink: "",
           icon: "apple",
           language: "Swift",
           color: customColor.swift
@@ -82,7 +83,8 @@ export const projectsSets = {
             projectImage: [mobileImage, webImage],
           },
           description: "Advanced todo list with user authentication, login and register using firebase!",
-          link: "",
+          githubLink: "",
+          previewLink: "",
           icon: "apple",
           language: "Swift",
           color: customColor.swift

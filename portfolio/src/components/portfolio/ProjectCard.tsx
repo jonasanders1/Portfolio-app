@@ -11,9 +11,9 @@ interface ProjectItem {
   image: {
     projectImage: string[]
   };
-
   description: string;
-  link: string;
+  githubLink: string;
+  previewLink: string;
   icon: string;
   language: string
   color: string
@@ -56,7 +56,7 @@ const ProjectCard: React.FC<{item : ProjectItem}> = ({item}) => {
           )}
 
         </div>
-        <Footer link={item.link}/>
+        <Footer previewLink={item.previewLink} githubLink={item.githubLink}/>
         
      </div>
   )
