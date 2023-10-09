@@ -9,11 +9,12 @@ import result from "../../assets/project-images/quiz-app/result.png"
 import snake from "../../assets/project-images/snake/snake.png"
 // Spotify
 import spotify from "../../assets/project-images/spotify-app/spotify.png"
-
 // Portfolio
 import portfolio from "../../assets/project-images/portfolio/portfolio.png"
-
-
+// Wordle
+import wordle from "../../assets/project-images/wordle/wordle.png"
+// TipCalculator
+import tipCalculator from "../../assets/project-images/tip-calculator/tip-calculator.png"
 const customColor = {
     typescript: "#387cc8",
     javascript: "#f0db4c",
@@ -48,6 +49,33 @@ export const projectsSets = {
         language: "TypeScript",
         color : customColor.typescript
       },
+      {
+        id: 3,
+        name:"Wordle",
+        image: {
+          projectImage: [wordle],
+        },
+        description: "The popular wordle game made with vanilla JS. The app is static for now, i want to add so that a random word is picked every day.",
+        previewLink: "https://wordle-livid-gamma.vercel.app/",
+        githubLink: "https://github.com/jonasanders1/Wordle",
+        icon: "javascript",
+        language: "JavaScript",
+        color : customColor.javascript
+      },
+      {
+        id: 4,
+        name:"Tip calculator",
+        image: {
+          projectImage: [tipCalculator],
+        },
+        description: "A challenge created by Frontendmentor.com. A calculator for calculating tip.",
+        previewLink: "https://tip-calculator-app-orcin-nine.vercel.app/",
+        githubLink: "https://github.com/jonasanders1/tip-calculator-app",
+        icon: "typescript",
+        language: "Typescript",
+        color : customColor.typescript
+      }
+
     ],
     mobile: [
         {
