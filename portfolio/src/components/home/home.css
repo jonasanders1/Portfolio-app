@@ -5,7 +5,7 @@
 .home__content{
     grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
-    column-gap: 2rem;
+    column-gap: 4rem;
     align-items: center;
 }
 .home__social{
@@ -175,8 +175,8 @@
   /* For small devices */
   @media screen and (max-width: 350px) {
     .home__img{
-        width: 180px;
-        height: 180px;
+        width: 160px;
+        height: 160px;
     }
     .home__hand{
         width: 22px;

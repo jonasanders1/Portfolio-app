@@ -15,6 +15,9 @@ import portfolio from "../../assets/project-images/portfolio/portfolio.png"
 import wordle from "../../assets/project-images/wordle/wordle.png"
 // TipCalculator
 import tipCalculator from "../../assets/project-images/tip-calculator/tip-calculator.png"
+// Password Gen
+import Password from '../../assets/project-images/Password-Generator/password.png'
+
 const customColor = {
     typescript: "#387cc8",
     javascript: "#f0db4c",
@@ -71,6 +74,19 @@ export const projectsSets = {
         description: "A challenge created by Frontendmentor.com. A calculator for calculating tip.",
         previewLink: "https://tip-calculator-app-orcin-nine.vercel.app/",
         githubLink: "https://github.com/jonasanders1/tip-calculator-app",
+        icon: "typescript",
+        language: "Typescript",
+        color : customColor.typescript
+      },
+      {
+        id: 5,
+        name:"Password",
+        image: {
+          projectImage: [Password],
+        },
+        description: "A challenge created by Frontendmentor.com. The app lets you generate a password.",
+        previewLink: "https://password-generator-wheat-three.vercel.app/",
+        githubLink: "https://github.com/jonasanders1/Password-generator",
         icon: "typescript",
         language: "Typescript",
         color : customColor.typescript
